@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/LOGO"
+        android:layout_width="108dp"
+        android:layout_height="65dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.21"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.15"
+        android:src="@drawable/ic_logo_blue"/>
+
+    <TextView
+        android:id="@+id/TextJoin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/LOGO"
+        app:layout_constraintLeft_toLeftOf="@id/LOGO"
+        android:text="회원가입"
+        android:textColor="#1d1c1c"
+        android:textSize="24sp"
+        android:letterSpacing="0.05"
+        android:lineSpacingExtra="11sp"
+        android:layout_marginTop="8dp"
+        />
+
+    <EditText
+        android:id="@+id/NAME"
+        android:layout_width="0dp"
+        android:layout_height="32dp"
+        android:layout_marginHorizontal="42dp"
+        app:layout_constraintTop_toBottomOf="@+id/TextJoin"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="36dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:background="#10534BAE"
+        android:hint="   NAME"
+        android:textSize="17.5sp"
+        android:textColorHint="#534bae"
+        />
+
+    <EditText
+        android:id="@+id/sign_up_email"
+        android:layout_width="0dp"
+        android:layout_height="32dp"
+        android:layout_marginHorizontal="42dp"
+        app:layout_constraintTop_toBottomOf="@+id/NAME"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="41dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:background="#10534BAE"
+
+        android:hint="   ID"
+        android:textSize="17.5sp"
+        android:textColorHint="#534bae"
+        />
+
+    <EditText
+        android:id="@+id/sign_up_pwd"
+        android:layout_width="0dp"
+        android:layout_height="32dp"
+        android:layout_marginHorizontal="42dp"
+        app:layout_constraintTop_toBottomOf="@+id/sign_up_email"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="41dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:background="#10534BAE"
+        android:hint="   PW"
+        android:textSize="17.5sp"
+        android:textColorHint="#534bae"
+        />
+
+    <EditText
+        android:id="@+id/CheckPW"
+        android:layout_width="0dp"
+        android:layout_height="32dp"
+        android:layout_marginHorizontal="42dp"
+        app:layout_constraintTop_toBottomOf="@+id/sign_up_pwd"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:background="#10534BAE"
+        android:hint="   CheckPW"
+        android:textSize="17.5sp"
+        android:textColorHint="#534bae"
+        />
+
+    <ImageView
+        android:id="@+id/CheckCircle3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/sign_up_pwd"
+        app:layout_constraintLeft_toRightOf="@id/sign_up_pwd"
+        android:src="@drawable/check_circle"
+        />
+
+    <ImageView
+        android:id="@+id/CheckCircle2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/sign_up_email"
+        app:layout_constraintLeft_toRightOf="@id/sign_up_email"
+        android:src="@drawable/check_circle"
+        />
+
+    <ImageView
+        android:id="@+id/CheckCircle1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/NAME"
+        app:layout_constraintLeft_toRightOf="@id/NAME"
+        android:src="@drawable/check_circle"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/CheckPW"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="41dp"
+        android:background="@android:color/white"
+        android:text="회원가입완료"
+        android:textSize="17sp"
+        android:lineSpacingExtra="8dp"
+        android:padding="10dp"
+        android:textColor="#534bae"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
